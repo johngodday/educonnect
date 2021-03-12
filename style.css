@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	font-family: arial;
+}
+/* styling nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4CAF50;
+}
+
+li{
+	display: inline-flex;
+	font-size: 18px;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+
+.navbar a:hover{
+	background-color: #ddd
+}
+
+/* header style*/
+
+.header{
+	text-align: center;
+	padding: 10px;
+	background-color: #f1f1f1
+}
+
+/*main column after header */
+.main{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 5px 5px 5px;
+}
+
+/* using grid 
+.main{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); 
+	grid-template-rows: 1fr;
+	align-items: center;
+	padding: 10px 16px 30px 120px;
+}*/
+
+/* mainn background image*/
+.main.img{
+	background-image: url("image/stu.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+
+/*main mobile response*/
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+/* text shadow on h1 and h2*/
+.website-about > h1, h2{
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+/*style on login label */
+form label{
+	color: #dee;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* style on input and submit*/
+input[type = text],[type = password]{
+	width: 300px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+}
+
+input[type = submit]{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* style on forum row */
+.forum{
+	text-align: center;
+	padding: 2px 2px;
+}
+
+.forum-button{
+	background-color: #4CAF50;
+	text-decoration: none;
+	padding: 15px 32px;
+	color: white;
+	text-align: center;
+
+/* style on footer*/
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
